@@ -2,8 +2,8 @@
 PKG_REVISION = ".0"
 
 require 'simplecov'
-SimpleCov.start
 task :coverage do
+  SimpleCov.start
   SimpleCov.command_name 'Unit Tests'
   Rake::Task[:test].execute
 end
